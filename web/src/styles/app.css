@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme inline {
+	--font-sans: "Instrument Sans Variable", ui-sans-serif, system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+	--background: oklch(0.07 0.01 260);
+	--foreground: oklch(0.98 0 0);
+	--midnight: oklch(0.07 0.012 260);
+	--midnight-2: oklch(0.095 0.012 260);
+	--midnight-3: oklch(0.12 0.012 260);
+	--paper: oklch(0.985 0 0);
+	--paper-warm: oklch(0.965 0.01 80);
+	--ink: oklch(0.06 0.012 260);
+	--hairline: oklch(0 0 0 / 0.08);
+	--hairline-strong: oklch(0 0 0 / 0.14);
+	--overlay-edge-x: clamp(1rem, 1.2vw, 1.4rem);
+	--overlay-edge-y: clamp(1rem, 1.6vh, 1.6rem);
+	--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+html {
+	font-family: var(--font-sans);
+	background: transparent;
+	color: var(--foreground);
+}
+
+body {
+	font-family: var(--font-sans);
+	background: transparent;
+	color: var(--foreground);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+.kura-ui-root {
+	isolation: isolate;
+}
+
+@keyframes overlay-in {
+	from {
+		opacity: 0;
+		transform: translateY(8px) scale(0.98);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.animate-overlay-in {
+	animation: overlay-in 160ms var(--ease-out-expo) both;
+}
