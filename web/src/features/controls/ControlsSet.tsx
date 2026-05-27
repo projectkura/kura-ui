@@ -25,12 +25,12 @@ export default function ControlsSet({ orientation, items }: ControlsSetProps) {
 			{items.map((item) => (
 				<div
 					key={`${item.input}:${item.label}`}
-					className="group inline-flex min-h-11 items-center gap-2 rounded-full border border-[color:var(--hairline-strong)] bg-[color:var(--paper)]/96 px-2 py-2 text-[0.8125rem] font-semibold tracking-[0.02em] text-[color:var(--ink)] shadow-[0_12px_30px_rgba(6,8,16,0.24)] ring-1 ring-black/4 transition-transform duration-150 ease-[var(--ease-out-expo)] will-change-transform"
+					className="group inline-flex min-h-9 items-center gap-2 rounded-full border border-white/10 bg-[color:var(--midnight-2)] px-1.5 py-1.5 text-[0.8125rem] font-semibold tracking-[0.02em] shadow-[0_8px_24px_rgba(0,0,0,0.5)] transition-transform duration-150 ease-[var(--ease-out-expo)] will-change-transform"
 				>
-					<span className="inline-flex min-w-12 items-center justify-center rounded-full bg-[color:var(--ink)] px-3 py-1.5 font-mono text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.14)]">
+					<span className="inline-flex min-w-10 items-center justify-center rounded-full bg-white px-2.5 py-1 font-mono text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[color:var(--midnight)] shadow-[0_1px_3px_rgba(0,0,0,0.4)]">
 						{item.input}
 					</span>
-					<span className="pr-2 text-[0.82rem] leading-none text-black/88">
+					<span className="pr-2 text-[0.8rem] leading-none text-white/80">
 						{item.label}
 					</span>
 				</div>
