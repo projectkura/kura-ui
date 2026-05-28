@@ -4,3 +4,4 @@ temp
 *.zip
 *.tsbuildinfo
 .DS_Store
+fxmanifest.lua
