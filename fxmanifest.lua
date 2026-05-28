@@ -6,7 +6,7 @@ use_experimental_fxv2_oal 'yes'
 
 name 'kura-ui'
 author 'Walteria.net'
-version '0.0.2'
+version '0.0.3'
 license 'UNLICENSED'
 description 'Kura UI interface layer for Project Kura'
 
