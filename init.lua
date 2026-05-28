@@ -52,10 +52,6 @@
 ---@class KuraUI
 ---@field controls KuraUIControlsClient|KuraUIControlsServer
 
-if GetResourceState('kura-core') ~= 'started' then
-    error('kura-ui must be started after kura-core.', 0)
-end
-
 local resourceName <const> = GetCurrentResourceName()
 local isServer <const> = IsDuplicityVersion()
 local proxyCache = {}

@@ -7,7 +7,7 @@ use_experimental_fxv2_oal 'yes'
 name 'kura-ui'
 author 'Walteria.net'
 version '0.0.3'
-license 'UNLICENSED'
+license 'LGPL-3.0-or-later'
 description 'Kura UI interface layer for Project Kura'
 
 ui_page 'web/build/index.html'
@@ -19,7 +19,6 @@ files {
 
 shared_scripts {
     '@kura-lib/init.lua',
-    '@kura-core/init.lua',
     'init.lua',
 }
 

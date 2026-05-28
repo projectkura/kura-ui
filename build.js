@@ -23,7 +23,6 @@ files {
 
 shared_scripts {
     '@kura-lib/init.lua',
-    '@kura-core/init.lua',
     'init.lua',
 }
 

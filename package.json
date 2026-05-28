@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Kura UI interface layer for Project Kura",
   "author": "Walteria.net",
-  "license": "UNLICENSED",
+  "license": "LGPL-3.0-or-later",
   "private": true,
   "type": "module",
   "scripts": {
